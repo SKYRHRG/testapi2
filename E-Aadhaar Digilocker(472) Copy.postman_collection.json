@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "8050ab0d-e53f-4059-a903-a9340549b905",
+		"name": "E-Aadhaar Digilocker(472) Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26810629"
+	},
+	"item": [
+		{
+			"name": "E-Aadhaar Doc",
+			"item": [
+				{
+					"name": "Encrypt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"trans_id\": \"121222\",\n    \"doc_type\": \"472\",\n    \"action\": \"LINK\"\n    \n}"
+						},
+						"url": {
+							"raw": "https://www.truthscreen.com/InstantSearch/encrypted_string",
+							"protocol": "https",
+							"host": [
+								"www",
+								"truthscreen",
+								"com"
+							],
+							"path": [
+								"InstantSearch",
+								"encrypted_string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "S-1 DGL Link Generate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"requestData\":\"d9ihvCkLHo86r/JTBabBFc1o9O27B2nQV91aX7oUPBvRgnLrx0MTqHMk6U6EdfyCLxAHPj5vj/cCG1t8SSdwqtIUjTmBlsDNYPRo1bhcSzw=:nunh3s4JwhJ9NONHleHyNQ==\"}"
+						},
+						"url": {
+							"raw": "https://www.truthscreen.com/api/v1.0/eaadhaardigilocker/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"truthscreen",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"eaadhaardigilocker",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Decrypt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"responseData\":\"AC6ieewr9cpOfeINLR+8z4JdSWMp03Rj4uXDWH8MIKhCTGkFCfPpC2yoMiPvQ6l/suPiZnNrJirquatHaBtqhDw3RVJQDqFoAFDYAh00aNCZGzzKtTvvJ6c84yoNExxj74t1G/3wggc8eXfDJJb468/lbluiBW6rgTCBYMxVMrvubat90i7caFHD18flspvbs/mvh1CTAk6Wat3XnzVefBMbMUV2LUirC6HkamXT81lPC/TGDsunaL6J51Wl9+XN:vKOx3Fsej1ITXoIEAFr8uA==\"}"
+						},
+						"url": {
+							"raw": "https://www.truthscreen.com/InstantSearch/decrypt_encrypted_string",
+							"protocol": "https",
+							"host": [
+								"www",
+								"truthscreen",
+								"com"
+							],
+							"path": [
+								"InstantSearch",
+								"decrypt_encrypted_string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Encrypt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ts_trans_id\": \"TS-RLT-870080\",\n    \"doc_type\": \"472\",\n    \"action\": \"STATUS\" \n}"
+						},
+						"url": {
+							"raw": "https://www.truthscreen.com/InstantSearch/encrypted_string",
+							"protocol": "https",
+							"host": [
+								"www",
+								"truthscreen",
+								"com"
+							],
+							"path": [
+								"InstantSearch",
+								"encrypted_string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "S-2 DGL Link Generate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"requestData\":\"dB77Yv/ZLH0Ti38N3uMFP/p8KVUXaIf6i3O2C6okKKS7iwL3qq3R2LhY8xAeq5WZBEp7cKdZW0CXErnu2TpYI6d+duGItw+w+Y/5nRE7g73OiELVNweqV60MRQbQJSNJ:5HfEhBspH+77TMVwZz1EXg==\"}"
+						},
+						"url": {
+							"raw": "https://www.truthscreen.com/api/v1.0/eaadhaardigilocker/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"truthscreen",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"eaadhaardigilocker",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Decrypt",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "username",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"responseData\":\"hQfugeK2mqReyJp9DcLjbjfP89k4M9iclsjzJ1P48i7z6YGpNekCgxFWtOfQ8M6Y2ZTIEOFK3APd5Pnz9vpF3WeLFbJaWQ/9NsYMSYUS/XlH95KqxA1pvSf1uFPwlb8E:Ud/w3tY4kuxJosWaJrb/HQ==\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://www.truthscreen.com/InstantSearch/decrypt_encrypted_string",
+							"protocol": "https",
+							"host": [
+								"www",
+								"truthscreen",
+								"com"
+							],
+							"path": [
+								"InstantSearch",
+								"decrypt_encrypted_string"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
