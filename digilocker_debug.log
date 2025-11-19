@@ -1,0 +1,50 @@
+[2025-11-19 07:57:34] Making API call to: https://www.truthscreen.com/api/v1.0/eaadhaardigilocker/
+Array
+(
+    [trans_id] => TEST-1763539054-2008
+    [doc_type] => 472
+    [action] => LINK
+)
+
+--------------------------------------------------------------------------------
+[2025-11-19 07:57:35] API Response (HTTP 401)
+Array
+(
+    [raw_response] => {"status":1046,"msg":"Unauthorized Access."}
+    [curl_error] => 
+)
+
+--------------------------------------------------------------------------------
+[2025-11-19 07:57:35] Link generation failed
+Array
+(
+    [status] => 1046
+    [msg] => Unauthorized Access.
+)
+
+--------------------------------------------------------------------------------
+[2025-11-19 07:59:06] Making API call to: https://www.truthscreen.com/api/v1.0/eaadhaardigilocker/
+Array
+(
+    [trans_id] => TEST-1763539146-6539
+    [doc_type] => 472
+    [action] => LINK
+)
+
+--------------------------------------------------------------------------------
+[2025-11-19 07:59:07] API Response (HTTP 401)
+Array
+(
+    [raw_response] => {"status":1046,"msg":"Unauthorized Access."}
+    [curl_error] => 
+)
+
+--------------------------------------------------------------------------------
+[2025-11-19 07:59:07] Link generation failed
+Array
+(
+    [status] => 1046
+    [msg] => Unauthorized Access.
+)
+
+--------------------------------------------------------------------------------
